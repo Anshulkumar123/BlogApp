@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/post")
 public class PostController {
-    private PostServiceImpl postServiceImpl;//postservice
+    private PostServiceImpl postServiceImpl;
 
     public PostController(PostServiceImpl postServiceImpl) {
         this.postServiceImpl = postServiceImpl;
